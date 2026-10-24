@@ -1,0 +1,96 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #111;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  background-color: #1c1c1c;
+  width: 90%;
+  max-width: 500px;
+  padding: 12px 18px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 28px;
+  margin-bottom: 16px;
+}
+
+h2 {
+  font-size: 22px;
+  margin-bottom: 16px;
+}
+
+#choices-list {
+  list-style: none;
+  margin-bottom: 6px;
+}
+
+#choices-list li {
+  background-color: #1c1c1c;
+  padding: 10px;
+  margin-bottom: 8px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.2s ease;
+}
+
+/* Change option color on hover */
+#choices-list li:hover {
+  background-color: #7200ff;
+}
+
+/* Keep the selected option purple */
+#choices-list li.selected {
+  background-color: #7200ff;
+}
+
+button {
+  background-color: #7200ff;
+  color: #fff;
+  border: none;
+  padding: 8px 10px;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #5900cc;
+}
+
+#next-btn {
+  margin-top: 0;
+  padding: 8px 10px;
+}
+
+#result-container p {
+  font-size: 20px;
+  margin: 15px 0;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Visible keyboard focus */
+button:focus-visible,
+#choices-list li:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 2px;
+}
